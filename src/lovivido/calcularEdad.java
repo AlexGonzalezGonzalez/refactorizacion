@@ -10,9 +10,14 @@ import javax.swing.JOptionPane;
  * @author agonzalezgonzalez
  */
 public class calcularEdad {
-      
-       public void calcularEdad(){
-     /** Declaramos las variables
+        String nombre;
+        String edad;
+        int meses;
+        int dias;
+        int horas;
+        int años;
+    /**
+     *Este es calcular edad
      * @param nombre Este es el nombre de la persona.
      * @param edad Esta variable es el mensaje que se mostrara cuando se pida la edad.
      * @param años Es la edad en años
@@ -20,12 +25,9 @@ public class calcularEdad {
      * @param dias Esta es la edad en dias.
      * @param horas Esta es la edad en horas.
      */
-        String nombre;
-        String edad;
-        int meses;
-        int dias;
-        int horas;
-        int años; 
+    public void calcularEdad(String nombre,String edad, int años, int meses, int dias, int horas){
+        
+        
         nombre = JOptionPane.showInputDialog("Escriba su nombre: ");
         edad = JOptionPane.showInputDialog("Escriba su edad: ");
         años = Integer.parseInt(edad);
