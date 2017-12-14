@@ -1,38 +1,19 @@
-
 package factorial;
 
-
 public class Factorial {
-
+    /**
+     * El buen main.
+     * El que instancia objetos de otras clases
+     * Y muestra el resultado de hacer el factorial de 8 calculado en la otra clase.
+     * @param args 
+     */
 
     public static void main(String[] args) {
+        calcularFactorial cf = new calcularFactorial();
+        cf.calcularFactorial(cf.getNumero(), cf.getFactorial(), cf.getNumRepet());
 
-
-    int j;
-    int f;
-
-  
-   j = 8;    
-   
-
-    
-   int i;
-   if (j == 0)
-f = 1;
-   else
-   {
-f = 1;
-for (i = j; i >= 1; i--)
-{
-    f = f * i;
-}
-   }    
-  
- 
-
-System.out.println(f); 
-
+        System.out.println(cf.getFactorial());
 
     }
-    
+
 }
