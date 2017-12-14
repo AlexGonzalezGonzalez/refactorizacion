@@ -15,6 +15,7 @@ public class LoVivido {
 
     /**
      *Este es el buen main
+     * 
      * @param args etc
      */
     public static void main(String[] args) {
